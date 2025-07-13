@@ -1,0 +1,188 @@
+.dropdown-menu-dark {
+    background-color: #111;
+    border: none;
+    border-radius: 0.25rem;
+  }
+  
+  .dropdown-menu-dark .dropdown-item {
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .dropdown-menu-dark .dropdown-item:hover {
+    background-color: #333;
+    color: #ffcc00;
+  }
+  
+
+
+
+  /* About css */
+  .alcohol-circle {
+    border: 2px solid #be4b28;
+    border-radius: 50%;
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .alcohol-circle img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  
+  .alcohol-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(190, 75, 40, 0.5);
+  }
+  
+  .alcohol-circle:hover img {
+    transform: scale(1.05) rotate(1deg);
+  }
+  
+
+  body {
+    overflow-x: hidden;
+  }
+  
+  .Experience-div-heding{
+    display: flex;
+    justify-content: center;
+  }
+
+  .Experience-div-para{
+    display: flex;
+    justify-content: center;
+    font-family: serif;
+    font-weight: 500;
+    font-size: 1.5rem !important;
+  }
+
+
+  /* Blog css */
+
+  .blog-card {
+    transition: all 0.3s ease;
+    border: none;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  
+  .card-img-wrapper {
+    overflow: hidden;
+  }
+  
+  .card-img-top {
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  
+  .blog-card:hover .card-img-top {
+    transform: scale(1.1);
+  }
+  
+  .card-title {
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .blog-card:hover .card-title {
+    color: #a50034;
+  }
+  
+  .blog-read-more {
+    font-weight: bold;
+    color: #a50034;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  .blog-read-more:hover {
+    text-decoration: underline;
+    margin-left: 4px;
+  }
+  
+
+ /* Contact Button */
+
+  /* From Uiverse.io by Randdose */ 
+  .Contact-button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;        /* Reduced padding */
+    border: #9b3f1d solid 0.1em; /* Thinner border */
+    border-radius: 0.25em;
+    color: #9b3f1d;
+    font-size: 1em;               /* Smaller font */
+    font-weight: 500;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 300ms, color 300ms;
+    user-select: none;
+  }
+  
+  .Contact-button p {
+    z-index: 1;
+  }
+  
+  .Contact-button:hover {
+    color: #212121;
+  }
+  
+  .Contact-button:active {
+    border-color: #9b3f1d;
+  }
+  
+  .Contact-button::after, .Contact-button::before {
+    content: "";
+    position: absolute;
+    width: 5.5em;                 /* Smaller circle */
+    aspect-ratio: 1;
+    background: #9b3f1d;
+    opacity: 50%;
+    border-radius: 50%;
+    transition: transform 500ms, background 300ms;
+  }
+  
+  .Contact-button::before {
+    left: 0;
+    transform: translateX(-6em);  /* Adjust based on new size */
+  }
+  
+  .Contact-button::after {
+    right: 0;
+    transform: translateX(6em);
+  }
+  
+  .Contact-button:hover:before {
+    transform: translateX(-0.7em);
+  }
+  
+  .Contact-button:hover:after {
+    transform: translateX(0.7em);
+  }
+  
+  .Contact-button:active:before,
+  .Contact-button:active:after {
+    background: #9b3f1d;
+  }
+  
